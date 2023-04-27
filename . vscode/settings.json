@@ -1,0 +1,27 @@
+{
+  // VS Code Configuration
+  "javascript.validate.enable": false, // disable default js validation
+  "workbench.editor.enablePreview": false, // 关闭文件预览
+  //disable css validation
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  // for supporting vue
+  "eslint.validate": ["vue", "html", "javascript", "graphql", "typescript"],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "git.ignoreWindowsGit27Warning": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  //add emmet language for vue
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
